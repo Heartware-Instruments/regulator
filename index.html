@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regulator - Nervous System Regulation & Emotional Wellness</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #e2e8f0;
+            background: #0d1117;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+            background: linear-gradient(180deg, #0d1117 0%, #161b22 100%);
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            letter-spacing: -1px;
+        }
+
+        .hero .tagline {
+            font-size: 1.4rem;
+            color: #8b949e;
+            margin-bottom: 20px;
+        }
+
+        .hero .description {
+            max-width: 700px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            color: #b0b8c1;
+            line-height: 1.8;
+        }
+
+        .badge {
+            display: inline-block;
+            background: rgba(99, 179, 237, 0.15);
+            color: #63b3ed;
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            margin-top: 25px;
+            border: 1px solid rgba(99, 179, 237, 0.3);
+        }
+
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            border-radius: 24px;
+            margin-bottom: 25px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+        }
+
+        /* Screenshots Section */
+        .screenshots {
+            padding: 60px 20px;
+            background: #161b22;
+        }
+
+        .screenshots h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: #fff;
+        }
+
+        .screenshot-gallery {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+            padding: 20px 0;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .screenshot-gallery::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        .screenshot-gallery::-webkit-scrollbar-track {
+            background: #21262d;
+            border-radius: 4px;
+        }
+
+        .screenshot-gallery::-webkit-scrollbar-thumb {
+            background: #30363d;
+            border-radius: 4px;
+        }
+
+        .screenshot-gallery img {
+            flex-shrink: 0;
+            height: 500px;
+            width: auto;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+            scroll-snap-align: center;
+        }
+
+        .screenshot-gallery-ipad img {
+            height: 400px;
+        }
+
+        /* Features */
+        .features {
+            padding: 60px 20px;
+            background: #0d1117;
+        }
+
+        .feature {
+            background: #161b22;
+            border-radius: 16px;
+            padding: 35px;
+            margin-bottom: 25px;
+            border: 1px solid #21262d;
+        }
+
+        .feature h2 {
+            color: #58a6ff;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .feature p {
+            color: #8b949e;
+            margin-bottom: 15px;
+        }
+
+        .feature ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .feature li {
+            padding: 8px 0;
+            padding-left: 28px;
+            position: relative;
+            color: #b0b8c1;
+        }
+
+        .feature li::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 14px;
+            width: 8px;
+            height: 8px;
+            background: linear-gradient(135deg, #58a6ff, #a855f7);
+            border-radius: 50%;
+        }
+
+        .feature li strong {
+            color: #e2e8f0;
+        }
+
+        /* Two column grid for smaller features */
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 25px;
+        }
+
+        .feature-grid .feature {
+            margin-bottom: 0;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            background: #161b22;
+            color: #8b949e;
+            border-top: 1px solid #21262d;
+        }
+
+        footer p {
+            font-size: 0.95rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            .hero .tagline {
+                font-size: 1.1rem;
+            }
+            .feature {
+                padding: 25px;
+            }
+            .screenshot-gallery img {
+                height: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="container">
+            <img src="icon_regulator.png" alt="Regulator App Icon" class="app-icon">
+            <h1>Regulator</h1>
+            <p class="tagline">Nervous System Regulation & Emotional Wellness</p>
+            <p class="description">
+                A science-informed emotional regulation app designed to help you manage stress, anxiety, overwhelm, and emotional shutdown. Gentle, effective tools to support your nervous system and guide you back toward balance, safety, and clarity.
+            </p>
+            <span class="badge">No ads. No subscriptions. Everything included.</span>
+        </div>
+    </section>
+
+    <section class="screenshots">
+        <div class="container">
+            <h2>iPhone</h2>
+        </div>
+        <div class="screenshot-gallery">
+            <img src="screenshots-iphone/screenshot-13.25.10.jpg" alt="Home screen">
+            <img src="screenshots-iphone/screenshot-13.25.18.jpg" alt="Practices menu">
+            <img src="screenshots-iphone/screenshot-13.25.35.jpg" alt="State Match">
+            <img src="screenshots-iphone/screenshot-13.25.45.jpg" alt="State Match selection">
+            <img src="screenshots-iphone/screenshot-13.25.51.jpg" alt="Guided meditation">
+            <img src="screenshots-iphone/screenshot-13.25.55.jpg" alt="Meditation player">
+            <img src="screenshots-iphone/screenshot-13.26.01.jpg" alt="Breathing exercise">
+            <img src="screenshots-iphone/screenshot-13.26.11.jpg" alt="4-4-6 Breathing">
+            <img src="screenshots-iphone/screenshot-13.26.19.jpg" alt="EFT Tapping">
+            <img src="screenshots-iphone/screenshot-13.26.53.jpg" alt="Finger tapping">
+            <img src="screenshots-iphone/screenshot-13.27.17.jpg" alt="Neuro rocking">
+            <img src="screenshots-iphone/screenshot-13.27.27.jpg" alt="Grounding exercise">
+            <img src="screenshots-iphone/screenshot-13.27.32.jpg" alt="Sound bath">
+            <img src="screenshots-iphone/screenshot-13.27.57.jpg" alt="Memory game">
+            <img src="screenshots-iphone/screenshot-13.28.18.jpg" alt="Check-in">
+            <img src="screenshots-iphone/screenshot-13.28.21.jpg" alt="Mood tracking">
+            <img src="screenshots-iphone/screenshot-13.28.34.jpg" alt="Insights">
+            <img src="screenshots-iphone/screenshot-15.16.06.jpg" alt="Activity history">
+        </div>
+    </section>
+
+    <section class="screenshots">
+        <div class="container">
+            <h2>iPad</h2>
+        </div>
+        <div class="screenshot-gallery screenshot-gallery-ipad">
+            <img src="screenshots-ipad/screenshot-13.34.14.jpg" alt="Practices menu">
+            <img src="screenshots-ipad/screenshot-13.34.19.jpg" alt="Check-in screen">
+            <img src="screenshots-ipad/screenshot-13.34.24.jpg" alt="State Match">
+            <img src="screenshots-ipad/screenshot-13.34.39.jpg" alt="Guided meditation">
+            <img src="screenshots-ipad/screenshot-13.34.44.jpg" alt="EFT Tapping">
+            <img src="screenshots-ipad/screenshot-13.35.01.jpg" alt="Breathing exercise">
+            <img src="screenshots-ipad/screenshot-13.35.15.jpg" alt="4-4-6 Breathing">
+            <img src="screenshots-ipad/screenshot-13.35.19.jpg" alt="Neuro rocking">
+            <img src="screenshots-ipad/screenshot-13.35.24.jpg" alt="Grounding exercise">
+            <img src="screenshots-ipad/screenshot-13.35.25.jpg" alt="Sound bath">
+            <img src="screenshots-ipad/screenshot-13.38.14.jpg" alt="Mood tracking">
+            <img src="screenshots-ipad/screenshot-13.38.21.jpg" alt="Insights">
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+
+            <div class="feature">
+                <h2>Daily Regulation & Awareness</h2>
+                <p>
+                    Regulator centers around a living wellness flame that reflects your daily self-care activity. As you practice, the flame grows and changes, helping you build consistent regulation habits over time. View activity history, mood trends, and long-term insights to better understand your emotional patterns.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h2>Emotional Check-Ins</h2>
+                <p>Track how you're feeling with flexible daily check-ins:</p>
+                <ul>
+                    <li>Quick 5-point mood scale</li>
+                    <li>Optional detailed tracking of energy, emotion type, and intensity</li>
+                    <li>Emotion blends based on Plutchik's emotion model</li>
+                    <li>Clear charts showing trends across days, months, or years</li>
+                </ul>
+            </div>
+
+            <div class="feature">
+                <h2>Guided Meditations (11+ Hours)</h2>
+                <p>
+                    Access over 11 hours of guided meditations, including more than 6 hours of regulation-focused content. Sessions are designed for different nervous system states and include grounding, inner child support, havening-inspired practices, sleep support, boundaries, intuition, anchoring, and more.
+                </p>
+            </div>
+
+            <div class="feature">
+                <h2>State-Based Guidance</h2>
+                <p>Not sure what you need? Regulator helps you identify whether your nervous system is:</p>
+                <ul>
+                    <li><strong>Hyperaroused</strong> — anxious, activated</li>
+                    <li><strong>Hypoaroused</strong> — numb, disconnected</li>
+                    <li><strong>Balanced</strong></li>
+                </ul>
+                <p style="margin-top: 15px;">You'll then be guided to practices that best support your current state.</p>
+            </div>
+
+            <div class="feature-grid">
+                <div class="feature">
+                    <h2>Breathing & Somatic Regulation</h2>
+                    <p>Evidence-informed tools including:</p>
+                    <ul>
+                        <li>Paced breathing visuals</li>
+                        <li>4-4-6 deep breathing for parasympathetic activation</li>
+                        <li>Bilateral movement and neuro rocking</li>
+                        <li>Temperature-based calming techniques</li>
+                    </ul>
+                </div>
+
+                <div class="feature">
+                    <h2>Trauma-Informed Practices</h2>
+                    <p>Gentle, body-based exercises inspired by EMDR, EFT, NRRT, and polyvagal theory:</p>
+                    <ul>
+                        <li>Step-by-step EFT tapping guidance</li>
+                        <li>Finger tapping with progressive phases</li>
+                        <li>Butterfly hug and self-soothing</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="feature-grid">
+                <div class="feature">
+                    <h2>Grounding & Focus Tools</h2>
+                    <p>For moments of anxiety or dissociation:</p>
+                    <ul>
+                        <li>5-4-3-2-1 sensory grounding</li>
+                        <li>SBRC mindfulness technique</li>
+                        <li>Pattern-based memory game to redirect anxious thoughts</li>
+                    </ul>
+                </div>
+
+                <div class="feature">
+                    <h2>Sound & Sensory Support</h2>
+                    <p>
+                        Calming sound bath experiences and subtle visuals support relaxation throughout the app.
+                    </p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <h2>Who It's For</h2>
+                <p>
+                    Regulator is designed for anyone seeking practical, compassionate tools for emotional regulation and nervous system support — whether in moments of distress or as part of daily self-care.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>Regulator — Emotional Wellness & Nervous System Support</p>
+    </footer>
+</body>
+</html>
